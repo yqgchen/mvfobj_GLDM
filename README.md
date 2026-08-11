@@ -54,7 +54,7 @@ Code for the simulation studies and data application in the paper.
 
 It is not feasible to reproduce all the simulation results on a standard machine (e.g., a desktop or a laptop). For a quick verification, run the R scripts `simulation/spd/analyze_data.R` and `simulation/lap/analyze_lap.R`. By default, these run $B=2$ replicates for the joint-variation setting on a subset of noise levels. Results are saved in `simulation/results/`. To generate figures of boxplots, run `simulation/make_plots.R` with `data_type` and `scenario` set properly. For the phase-variation-only setting, replace the data simulation source and estimation function as described in the comments of the aforementioned two scripts.
 
-### Full Reproduction (HPC cluster)
+### Full Reproduction (HPC Cluster)
 
 The full simulation ($B=250$, 27 noise combinations, 4 methods, 2 cases and 2 settings) requires an HPC cluster. SLURM submission scripts are provided in `simulation/cluster/`.
 
