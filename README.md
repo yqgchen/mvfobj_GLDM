@@ -5,7 +5,7 @@ Code for the simulation studies and data application in the paper.
 ## Requirements
 
 - R 4.4.0
-- R packages: frechet (0.3.0), fdasrvf (2.4.4), pracma (2.4.6), minqa (1.2.8), Matrix (1.7.5), expm (1.0.0), SMFilter (1.0.3), osqp (0.6.3.2), rgl, corrplot
+- R packages: frechet (0.3.0), fdasrvf (2.4.4), pracma (2.4.4), minqa (1.2.8), Matrix (1.6.5), expm (1.0.0), SMFilter (1.0.3), osqp (0.6.3.2), rgl (1.3.1), corrplot (0.95)
 - Application additionally requires: fdadensity (0.1.2), fdapace (0.6.0), OPW (0.1.0, installed from GitHub)
 
 ## File Overview
