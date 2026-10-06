@@ -271,7 +271,7 @@ plot_tau_nw <- function(tau, fig_dir = FIG_DIR, filename = "nw_tau.pdf") {
 
 # Fill colors for GLDM (white), CM (grey80), and SRVF (grey40)
 colors <- c("white","grey80","grey40") %>%
-  set_names( c("GLDM","CM", "SVRF") )
+  set_names( c("GLDM","CM", "SRVF") )
 
 # =============================================================================
 # Figures: one PDF per evaluation metric
@@ -281,16 +281,16 @@ colors <- c("white","grey80","grey40") %>%
 #          CM does not estimate subject-level warping functions)
 make_boxplot_for_multiple_variables(
   variables = c("sWMISE", "sWMISE_srvf"),
-  fill_cols = colors[c("GLDM","SVRF")] %>% set_names(NULL),
-  fill_labs = c("GLDM","SVRF"),
+  fill_cols = colors[c("GLDM","SRVF")] %>% set_names(NULL),
+  fill_labs = c("GLDM","SRVF"),
   var_label="sWMISE"
 )
 
 # gWMISEp: global warping-function MISE (phase component; GLDM vs. SRVF)
 make_boxplot_for_multiple_variables(
   variables = c("gWMISEp", "gWMISEp_srvf"),
-  fill_cols = colors[c("GLDM","SVRF")] %>% set_names(NULL),
-  fill_labs = c("GLDM","SVRF"),
+  fill_cols = colors[c("GLDM","SRVF")] %>% set_names(NULL),
+  fill_labs = c("GLDM","SRVF"),
   var_label="gWMISEp"
 )
 
